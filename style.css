@@ -1,0 +1,22 @@
+@import url(./ressources/FinkHeavy.ttf);
+body{
+    display: flex;
+    background: rgb(1,0,24);
+    background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(9,9,121,1) 100%);
+}
+
+.header{grid-area: header;}
+.textMitte{grid-area: textMitte;}
+.seiteLinks{grid-area: seiteLinks;}
+.seiteRechrs{grid-area: seiteRechts;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'seiteLinks header seiteRechts'
+    'seiteLinks textMitte seiteRechts'
+    'seiteLinks textMitte seiteRechts';
+    padding: 10px;
+    gap: 10px;
+
+}
