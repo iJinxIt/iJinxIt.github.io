@@ -1,9 +1,26 @@
-@import url(./ressources/FinkHeavy.ttf);
-body{
-    display: flex;
-    background: rgb(1,0,24);
-    background: linear-gradient(90deg, rgba(1,0,24,1) 0%, rgba(9,9,121,1) 100%);
+@font-face {
+    font-family: 'FinkHeavy';
+    src: url('./ressources/FinkHeavy.ttf');
+    src: url("./ressources/FinkHeavy.woff");
 }
+
+html{
+    height: 100%;
+}
+
+*{
+    color: aliceblue;
+}
+
+body{
+    font-family: 'FinkHeavy', Arial, Helvetica, sans-serif;
+    opacity: 0.4;
+    font-size: 100;
+    background: rgb(1,0,24);
+    background: linear-gradient(180deg, rgba(1,0,24,1) 0%, rgba(9,9,121,1) 100%);
+}
+
+
 
 .header{grid-area: header;}
 .textMitte{grid-area: textMitte;}
@@ -18,5 +35,10 @@ body{
     'seiteLinks textMitte seiteRechts';
     padding: 10px;
     gap: 10px;
-
 }
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
